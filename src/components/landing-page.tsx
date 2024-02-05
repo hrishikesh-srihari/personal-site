@@ -4,10 +4,10 @@
  */
 import Link from "next/link"
 
-export function landing-page() {
+export function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-800 transition-all duration-500 ease-in-out">
-      <header className="px-4 lg:px-6 h-16 flex items-center bg-purple-500 dark:bg-purple-800 transition-all duration-500 ease-in-out">
+      <header className="px-4 lg:px-6 h-16 flex items-center bg-purple-300 dark:bg-purple-400 transition-all duration-500 ease-in-out">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 font-space-grotesk transition-all duration-500 ease-in-out">
           Rishi Srihari
         </h1>
@@ -52,7 +52,7 @@ export function landing-page() {
           </div>
         </section>
         <section
-          className="w-full py-12 md:py-24 lg:py-32 bg-purple-400 dark:bg-purple-700 transition-all duration-500 ease-in-out"
+          className="w-full py-12 md:py-24 lg:py-32 bg-purple-400 dark:bg-purple-400 transition-all duration-500 ease-in-out"
           id="projects"
         >
           <div className="container px-4 md:px-6">
@@ -177,9 +177,9 @@ export function landing-page() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-purple-500 dark:bg-purple-800 transition-all duration-500 ease-in-out">
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-purple-400 dark:bg-purple-400 transition-all duration-500 ease-in-out">
         <p className="text-xs text-gray-500 dark:text-gray-400 font-space-grotesk transition-all duration-500 ease-in-out">
-          © 2024 John Doe. All rights reserved.
+          © 2024 Rishi Srihari. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -197,5 +197,5 @@ export function landing-page() {
         </nav>
       </footer>
     </div>
-  )
+  );
 }
