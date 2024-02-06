@@ -650,7 +650,7 @@ export function LandingPage() {
           <Button variant="outline" onClick={() => {window.open("https://github.com/hrishikesh-srihari", "_blank")}}>
           <GitHubIcon className="h-4 w-4"/><span className="pl-2">GitHub</span>
           </Button>
-          <Button variant="outline" onClick={() => {window.open("www.linkedin.com/in/hrishikesh-srihari000", "_blank")}}>
+          <Button variant="outline" onClick={() => {window.open("https://www.linkedin.com/in/hrishikesh-srihari000", "_blank")}}>
             <LinkedIn className="h-4 w-4"/><span className="pl-2">LinkedIn</span>
           </Button>
           <Button variant="outline" onClick={() => {window.open("mailto:sriharihrishikesh@gmail.com", "_blank")}}>
