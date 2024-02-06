@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { Button, buttonVariants } from "./ui/button";
-import GitHubIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { EmailRounded, LinkedIn } from "@mui/icons-material";
 import { ModeToggle } from "./ui/mode_toggle";
 import { cn } from "@/lib/utils"
@@ -47,7 +47,7 @@ export function LandingPage() {
           <div className="container px-4 md:px-6 flex justify-between items-center">
             <div className="flex flex-col justify-center space-y-4">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-space-grotesk transition-all duration-500 ease-in-out">
-                Hi, I'm Rishi Srihari
+                Hi, I&apos;m Rishi Srihari
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400 font-space-grotesk transition-all duration-500 ease-in-out">
                 A CS student and front-end developer specializing in building web applications.
@@ -98,7 +98,6 @@ export function LandingPage() {
                 <div className="flex gap-4">
                 <Credenza>
                   <CredenzaTrigger asChild>
-                    {/* <Button variant='secondary'>View More</Button> */}
                     <Link
                     className="italic text-sm text-gray-800 dark:text-gray-800 font-semibold hover:underline underline-offset-4 transition-all duration-500 ease-in-out"
                     href="#projects"
@@ -146,7 +145,7 @@ export function LandingPage() {
                     </CredenzaBody>
                     <CredenzaFooter>
                       <Link
-                        href={'https://google.com'}
+                        href={"https://google.com"}
                         target="_blank"
                         className={cn(buttonVariants({ variant: "outline" }))}
                       >
