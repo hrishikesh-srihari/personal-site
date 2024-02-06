@@ -59,7 +59,7 @@ export function LandingPage() {
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 transition-all duration-500 ease-in-out">
-          <div className="container px-4 md:px-6 flex justify-between items-center">
+          <div className="container px-4 md:px-6 flex sm:flex-col lg:flex-row justify-between items-center">
             <div className="flex flex-col justify-center space-y-4">
               <h1 className="text-3xl pl-10 font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-space-grotesk transition-all duration-500 ease-in-out">
                 Hi, I&apos;m Rishi Srihari
@@ -573,6 +573,7 @@ export function LandingPage() {
           </div>
         </section>
         <section className="w-full py-12 bg-violet-400 dark:bg-violet-400 md:py-24 lg:py-32 transition-all duration-500 ease-in-out" id="about">
+          <div className="">
           <div className="pt-10">
             <h2 className="pl-10 text-3xl font-bold tracking-tighter sm:text-5xl transition-all duration-500 ease-in-out">
               About Me
@@ -638,10 +639,7 @@ export function LandingPage() {
                 <CarouselNext />
               </Carousel>
               </div>
-          <div>
-            
           </div>
-          
         </section>
       </main>
       <footer className="flex flex-col gap-2 bg-violet-400 dark:bg-violet-400 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 transition-all duration-500 ease-in-out">
