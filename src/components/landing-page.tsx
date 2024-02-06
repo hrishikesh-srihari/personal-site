@@ -497,7 +497,8 @@ export function LandingPage() {
                   <Badge variant="default">🏆 Won Best Social Welfare Project</Badge>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400 font-space-grotesk transition-all duration-500 ease-in-out">
-                  A brief description of the experience.
+                Utilized Android Studio to develop an application for scheduling meetups, suggesting optimal event slots, 
+                and integrating daily plans to promote healthier relationships.
                 </p>
                 <div className="flex gap-4">
                 <Credenza>
