@@ -19,6 +19,15 @@ import {
   CredenzaTrigger,
 } from "@/components/ui/credenza"
 
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 
 export function LandingPage() {
   return (
@@ -562,7 +571,7 @@ export function LandingPage() {
           </div>
         </section>
         <section className="w-full py-12 bg-violet-400 dark:bg-violet-400 md:py-24 lg:py-32 transition-all duration-500 ease-in-out" id="about">
-          <div className="container px-4 md:px-6">
+          <div className="pt-10">
             <h2 className="pl-10 text-3xl font-bold tracking-tighter sm:text-5xl transition-all duration-500 ease-in-out">
               About Me
             </h2>
@@ -572,12 +581,65 @@ export function LandingPage() {
                 and am comfortable working with most modern web development frameworks and technologies. As a student, I&apos;m always looking to learn new skills and add to my range as a programmer and a student.
               </p>
             </div>
+            
             <div className="pl-10 pt-10">
               <Button variant="outline" onClick={() => {window.open("/Hrishikesh_Srihari_Resume.pdf", "_blank")}}>
                 <Description className="h-4 w-4"/><span className="pl-2">Resume</span>
               </Button>
             </div>
           </div>
+          <div className="w-[600px] flex mt-[-300px] ml-[900px]">
+              <Carousel className="h-[500px]">
+                <CarouselContent className="h-[500px]">
+                  <CarouselItem className="h-[500px]"><img
+                          className="mt-10 mb-10 w-full h-[400px] rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
+                          height="200"
+                          src="/xc_1.jpg"
+                          style={{
+                            aspectRatio: "200/200",
+                            objectFit: "cover",
+                          }}
+                          width="200"
+                        /></CarouselItem>
+                  <CarouselItem className="h-[500px]"><img
+                          className="mt-10 mb-10 w-full h-[400px] object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
+                          height="200"
+                          src="/xc_2.jpg"
+                          style={{
+                            aspectRatio: "200/200",
+                            objectFit: "cover",
+                          }}
+                          width="200"
+                        /></CarouselItem>
+                  <CarouselItem className="h-[500px]"><img
+                          className="mt-10 mb-10 w-full h-[400px] object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
+                          height="200"
+                          src="/irvine_hacks1.jpg"
+                          style={{
+                            aspectRatio: "200/200",
+                            objectFit: "cover",
+                          }}
+                          width="200"
+                        /></CarouselItem>
+                  <CarouselItem className="h-[500px]"><img
+                          className="mt-10 mb-10 w-full h-[400px] object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
+                          height="200"
+                          src="/IMG_1976.jpg"
+                          style={{
+                            aspectRatio: "200/200",
+                            objectFit: "cover",
+                          }}
+                          width="200"
+                        /></CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+              </div>
+          <div>
+            
+          </div>
+          
         </section>
       </main>
       <footer className="flex flex-col gap-2 bg-violet-400 dark:bg-violet-400 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 transition-all duration-500 ease-in-out">
