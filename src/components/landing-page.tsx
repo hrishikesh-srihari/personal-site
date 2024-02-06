@@ -104,7 +104,7 @@ export function LandingPage() {
                   <CredenzaTrigger asChild>
                     <Link
                     className="italic text-sm text-gray-800 dark:text-gray-800 font-semibold hover:underline underline-offset-4 transition-all duration-500 ease-in-out"
-                    href="#projects"
+                    href=""
                     >
                       <span className="text-gray-800 dark:text-gray-800">View More</span>
                     </Link>
@@ -155,7 +155,7 @@ export function LandingPage() {
                     </CredenzaBody>
                     <CredenzaFooter>
                       <Link
-                        href={"https://google.com"}
+                        href={"https://devpost.com/software/zotconnect-g6jhme"}
                         target="_blank"
                         className={cn(buttonVariants({ variant: "outline" }))}
                       >
@@ -206,7 +206,7 @@ export function LandingPage() {
                   <CredenzaTrigger asChild>
                     <Link
                     className="italic text-sm font-semibold text-gray-800 dark:text-gray-800 hover:underline underline-offset-4 transition-all duration-500 ease-in-out"
-                    href="#projects"
+                    href=""
                     >
                       <span className="text-gray-800 dark:text-gray-800">View More</span>
                     </Link>
@@ -301,7 +301,7 @@ export function LandingPage() {
                   <CredenzaTrigger asChild>
                     <Link
                     className="italic text-sm font-semibold text-gray-800 dark:text-gray-800 hover:underline underline-offset-4 transition-all duration-500 ease-in-out"
-                    href="#projects"
+                    href=""
                     >
                       <span className="text-gray-800 dark:text-gray-800">View More</span>
                     </Link>
@@ -408,7 +408,7 @@ export function LandingPage() {
                   <CredenzaTrigger asChild>
                     <Link
                     className="italic text-sm hover:underline underline-offset-4 transition-all duration-500 ease-in-out"
-                    href="#experiences"
+                    href=""
                     >
                       <span>View More</span>
                     </Link>
@@ -505,7 +505,7 @@ export function LandingPage() {
                   <CredenzaTrigger asChild>
                     <Link
                     className="italic text-sm hover:underline underline-offset-4 transition-all duration-500 ease-in-out"
-                    href="#experiences"
+                    href=""
                     >
                       <span>View More</span>
                     </Link>
