@@ -1,12 +1,14 @@
 "use client"
 import Link from "next/link"
 import { Button, buttonVariants } from "./ui/button";
+import Typewriter from 'typewriter-effect';
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Description, EmailRounded, LinkedIn } from "@mui/icons-material";
 import { ModeToggle } from "./ui/mode_toggle";
 import DescriptionIcon from '@mui/icons-material/Description';
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
+
 import {
   Credenza,
   CredenzaBody,
@@ -624,7 +626,7 @@ export function LandingPage() {
                   <CarouselItem className="h-[500px]"><img
                           className="mt-10 mb-10 w-full h-[400px] object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
                           height="200"
-                          src="/IMG_1976.jpg"
+                          src="/me_photo2.jpg"
                           style={{
                             aspectRatio: "200/200",
                             objectFit: "cover",
