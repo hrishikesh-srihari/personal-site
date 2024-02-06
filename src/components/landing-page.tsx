@@ -236,7 +236,7 @@ export function LandingPage() {
                         <img
                           className="mt-10 mb-10 w-full h-52 object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
                           height="200"
-                          src="/nasasuits.jpg.webp"
+                          src="/billiards.jpg.webp"
                           style={{
                             aspectRatio: "200/200",
                             objectFit: "cover",
@@ -383,7 +383,7 @@ export function LandingPage() {
                 <img
                   className="w-full h-48 object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
                   height="200"
-                  src="/nasasuits.jpg.webp"
+                  src="/nasa_jsc.jpg"
                   style={{
                     aspectRatio: "200/200",
                     objectFit: "cover",
@@ -391,7 +391,7 @@ export function LandingPage() {
                   width="200"
                 />
                 <h3 className="text-lg font-bold transition-all duration-500 ease-in-out">
-                  SWE Intern at NASA SUITS
+                  SWE Intern at NASA JSC
                 </h3>
                 <h5 className="text-md italic text-gray-500 dark:text-gray-400 font-semibold transition-all duration-500 ease-in-out mt-[0.5px]">
                   September 2023 - Present
@@ -415,7 +415,7 @@ export function LandingPage() {
                   </CredenzaTrigger>
                   <CredenzaContent>
                     <CredenzaHeader>
-                      <CredenzaTitle>SWE Intern at NASA SUITS</CredenzaTitle>
+                      <CredenzaTitle>SWE Intern at NASA JSC</CredenzaTitle>
                       <CredenzaDescription>
                         Subteam Lead
                       </CredenzaDescription>
@@ -439,7 +439,7 @@ export function LandingPage() {
                         <img
                           className="mt-10 mb-10 w-full h-52 object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-105"
                           height="200"
-                          src="/nasasuits.jpg.webp"
+                          src="/nasa_jsc.jpg"
                           style={{
                             aspectRatio: "200/200",
                             objectFit: "cover",
@@ -483,7 +483,7 @@ export function LandingPage() {
                   src="/cs_at_mines.png"
                   style={{
                     aspectRatio: "200/200",
-                    objectFit: "cover",
+                    objectFit: "fill",
                   }}
                   width="200"
                 />
@@ -533,7 +533,7 @@ export function LandingPage() {
                           src="/cs_at_mines.png"
                           style={{
                             aspectRatio: "200/200",
-                            objectFit: "cover",
+                            objectFit: "fill",
                           }}
                           width="200"
                         />
