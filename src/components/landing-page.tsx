@@ -374,7 +374,7 @@ export function LandingPage() {
           className="w-full py-12 md:py-24 lg:py-32 transition-all duration-500 ease-in-out transform skew-y-3"
           id="experiences"
         >
-          <div className="container px-4 md:px-6 transform -skew-y-3">
+          <div className="container px-4 md:px-6 transform -skew-y-3 ">
             <h2 className="pl-10 pb-10 text-3xl font-bold tracking-tighter sm:text-5xl transition-all duration-500 ease-in-out">
               Experiences
             </h2>
