@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const space_g = Space_Grotesk({ 
+  weight: '400',
+  subsets: ['latin', 'latin-ext']
+});
+
+const inter = Inter({
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: "Rishi Srihari",

@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import { Button, buttonVariants } from "./ui/button";
+import { Space_Grotesk } from 'next/font/google'
 import Typewriter from 'typewriter-effect';
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Description, EmailRounded, LinkedIn } from "@mui/icons-material";
