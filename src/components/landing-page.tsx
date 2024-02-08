@@ -110,7 +110,7 @@ export function LandingPage() {
                     Elevate academic connections with this tailored communication platform for professors & students. Your research needs, simplified.
                   </p>
                 </div>
-                
+
                 <div className="flex gap-4">
                 <Credenza>
                   <CredenzaTrigger asChild>
@@ -159,11 +159,11 @@ export function LandingPage() {
                         <span className="px-1"></span>
                         <Badge variant="secondary">Google Cloud AI</Badge>
                       </div>
-                      
-                      
 
-                      
-                      
+
+
+
+
                     </CredenzaBody>
                     <CredenzaFooter>
                       <Link
@@ -241,7 +241,7 @@ export function LandingPage() {
                       </p>
                       <span className="p-2"></span>
                       <p>
-                      • Developed an algorithm that takes into account angular velocity, drag, friction, and live table layout to predict game 
+                      • Developed an algorithm that takes into account angular velocity, drag, friction, and live table layout to predict game
                         movements.
                       </p>
                       <div className="pt-5 pb-5">
@@ -305,7 +305,7 @@ export function LandingPage() {
                   Academic Research Information Scraper
                 </h3>
                 <p className="text-gray-800 dark:text-gray-800 transition-all duration-500 ease-in-out">
-                  Built a Java program powered by Selenium that accept keywords and parameters through a polished GUI and scrapes hundreds of academic research databases for 
+                  Built a Java program powered by Selenium that accept keywords and parameters through a polished GUI and scrapes hundreds of academic research databases for
                   related papers and returns notable info, including abstract, number of citations, date of publication, links to further related sources, etc.
                 </p>
                 <div className="flex gap-4">
@@ -387,7 +387,7 @@ export function LandingPage() {
           id="experiences"
         >
           <div className="container px-4 md:px-6 transform -skew-y-3 ">
-            <h2 className="pl-10 pb-10 text-3xl font-bold tracking-tighter sm:text-5xl transition-all duration-500 ease-in-out">
+            <h2 className="pl-10 pb-10 text-3xl font-bold text-gray-800 dark:text-gray-800 tracking-tighter sm:text-5xl transition-all duration-500 ease-in-out">
               Experiences
             </h2>
             <div className="mx-auto grid items-start gap-12 sm:max-w-4xl sm:grid-cols-2 md:gap-16 lg:max-w-7xl mt-8 pl-10 mr-5">
@@ -410,7 +410,7 @@ export function LandingPage() {
                 </h5>
                 <p className="text-gray-500 dark:text-gray-400 transition-all duration-500 ease-in-out">
                   Spearhead the Local Mission Control Console &#40;LMCC&#41; subteam that works on the real-time tracking of critical biomedical and suit data, geological data collection, mission emergency handling, and seamless integration of all rover
-                      camera feeds for the explorer. 
+                      camera feeds for the explorer.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400 transition-all duration-500 ease-in-out">
                   Work under <span className="text-emerald-400 font-semibold">Team Cartographer.</span>
@@ -436,7 +436,7 @@ export function LandingPage() {
                       <span className="p-1"></span>
                       <p>
                       • Spearhead the Local Mission Control Console &#40;LMCC&#41; subteam that works on the real-time tracking of critical biomedical and suit data, geological data collection, mission emergency handling, and seamless integration of all rover
-                      camera feeds for the explorer. 
+                      camera feeds for the explorer.
                       </p>
                       <span className="p-2"></span>
                       <p>
@@ -509,7 +509,7 @@ export function LandingPage() {
                   <Badge variant="default">🏆 Won Best Social Welfare Project</Badge>
                 </div>
                 <p className="text-gray-500 dark:text-gray-400 font-space-grotesk transition-all duration-500 ease-in-out">
-                Utilized Android Studio to develop an application for scheduling meetups, suggesting optimal event slots, 
+                Utilized Android Studio to develop an application for scheduling meetups, suggesting optimal event slots,
                 and integrating daily plans to promote healthier relationships.
                 </p>
                 <div className="flex gap-4">
@@ -536,7 +536,7 @@ export function LandingPage() {
                       </p>
                       <span className="p-2"></span>
                       <p>
-                      • Directed preparation of presentation and pitch given at the end-of-term project convention. 
+                      • Directed preparation of presentation and pitch given at the end-of-term project convention.
                       </p>
                       <div className="pt-5 pb-5">
                         <img
@@ -576,16 +576,16 @@ export function LandingPage() {
         <section className="w-full py-12 bg-violet-400 dark:bg-violet-400 md:py-24 lg:py-32 transition-all duration-500 ease-in-out" id="about">
           <div className="">
           <div className="pt-10">
-            <h2 className="pl-10 text-3xl font-bold tracking-tighter sm:text-5xl transition-all duration-500 ease-in-out">
+            <h2 className="pl-10 text-gray-800 dark:text-gray-800 text-3xl font-bold tracking-tighter sm:text-5xl transition-all duration-500 ease-in-out">
               About Me
             </h2>
             <div className="pl-10 flex flex-col gap-4 mt-8">
               <p className="max-w-[700px] text-gray-700 md:text-xl dark:text-gray-700 font-space-grotesk transition-all duration-500 ease-in-out">
-                I am currently a student at the University of California, Irvine studying computer science. I have roughly 3 years of front-end experience 
+                I am currently a student at the University of California, Irvine studying computer science. I have roughly 3 years of front-end experience
                 and am comfortable working with most modern web development frameworks and technologies. As a student, I&apos;m always looking to learn new skills and add to my range as a programmer and a student.
               </p>
             </div>
-            
+
             <div className="pl-10 pt-10">
               <Button variant="outline" onClick={() => {window.open("/Hrishikesh_Srihari_Resume.pdf", "_blank")}}>
                 <Description className="h-4 w-4"/><span className="pl-2">Resume</span>
