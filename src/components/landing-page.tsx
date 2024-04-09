@@ -418,11 +418,11 @@ export function LandingPage() {
           className="w-full skew-y-3 transform py-12 transition-all duration-500 ease-in-out md:py-24 lg:py-32"
           id="experiences"
         >
-          <div className="container -skew-y-3 transform px-4 md:px-6 ">
+          <div className="container -skew-y-3 transform px-4 md:px-4 ">
             <h2 className="pb-10 pl-10 text-3xl font-bold tracking-tighter text-gray-800 transition-all duration-500 ease-in-out sm:text-5xl dark:text-gray-200">
               Experiences
             </h2>
-            <div className="mx-auto mr-5 mt-8 grid items-start gap-12 pl-10 sm:max-w-4xl sm:grid-cols-2 md:gap-16 lg:max-w-7xl">
+            <div className="mx-auto mr-5 mt-8 grid items-start gap-12 pl-10 sm:max-w-4xl sm:grid-cols-3 md:gap-16 lg:max-w-7xl">
               <div className="group grid transform gap-4 transition-all duration-200 hover:scale-105">
                 <img
                   className="h-48 w-full rounded-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -612,6 +612,89 @@ export function LandingPage() {
                           <Badge variant="secondary">Agile Workflow</Badge>
                           <span className="px-1"></span>
                           <Badge variant="secondary">Figma</Badge>
+                        </div>
+                      </CredenzaBody>
+                      <CredenzaFooter>
+                        <CredenzaClose asChild>
+                          <Button variant="outline">Close</Button>
+                        </CredenzaClose>
+                      </CredenzaFooter>
+                    </CredenzaContent>
+                  </Credenza>
+                </div>
+              </div>
+              <div className="group grid transform gap-4 transition-all duration-200 hover:scale-105">
+                <img
+                  className="h-48 w-full rounded-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                  height="200"
+                  src="/bren_school_of_ics.jpg"
+                  style={{
+                    aspectRatio: "200/200",
+                    objectFit: "fill",
+                  }}
+                  width="200"
+                />
+                <h3 className="font-space-grotesk text-lg font-bold transition-all duration-500 ease-in-out">
+                  Learning Assistant, Boolean Logic and Discrete Structures
+                </h3>
+                <h5 className="text-md mt-[0.5px] font-semibold italic text-gray-500 transition-all duration-500 ease-in-out dark:text-gray-400">
+                  March 2024 - Present
+                </h5>
+                <p className="font-space-grotesk text-gray-500 transition-all duration-500 ease-in-out dark:text-gray-400">
+                Organize weekly office hours and help labs and collaborate closely with Teaching Assistants and Prof. Gassko to write and 
+                test problems for use during lecture instruction and exams.
+                </p>
+                <div className="flex gap-4">
+                  <Credenza>
+                    <CredenzaTrigger asChild>
+                      <Link
+                        className="text-sm italic underline-offset-4 transition-all duration-500 ease-in-out hover:underline"
+                        href=""
+                      >
+                        <span>View More</span>
+                      </Link>
+                    </CredenzaTrigger>
+                    <CredenzaContent>
+                      <CredenzaHeader>
+                        <CredenzaTitle>
+                          Learning Assistant at Donald Bren School of Information and Computer Sciences
+                        </CredenzaTitle>
+                        <CredenzaDescription>
+                          Boolean Logic and Discrete Structures
+                        </CredenzaDescription>
+                      </CredenzaHeader>
+                      <CredenzaBody className="space-y-4 pb-4 text-center text-sm sm:pb-0 sm:text-left">
+                        <span className="p-1"></span>
+                        <p>
+                          • Organize weekly office hours and help labs to help 200+ students through specific 
+                          problems and prepare for exams and lectures.
+                        </p>
+                        <span className="p-2"></span>
+                        <p>
+                          • Collaborate closely with Teaching Assistant and Prof. Gassko to write and test problems 
+                          for use during lecture instruction and exams
+                        </p>
+                        <div className="pb-5 pt-5">
+                          <img
+                            className="mb-10 mt-10 h-52 w-full rounded-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                            height="200"
+                            src="/bren_school_of_ics.jpg"
+                            style={{
+                              aspectRatio: "200/200",
+                              objectFit: "fill",
+                            }}
+                            width="200"
+                          />
+                        </div>
+                        <CredenzaTitle>Skills</CredenzaTitle>
+                        <div className="flex-grid flex pb-14">
+                          <Badge variant="secondary">Discrete Mathematics</Badge>
+                          <span className="px-1"></span>
+                          <Badge variant="secondary">Teaching</Badge>
+                          <span className="px-1"></span>
+                          <Badge variant="secondary">Boolean Logic</Badge>
+                          <span className="px-1"></span>
+                          <Badge variant="secondary">Mentorship</Badge>
                         </div>
                       </CredenzaBody>
                       <CredenzaFooter>
