@@ -302,11 +302,11 @@ export function LandingPage() {
                   </Link>
                 </div>
               </div>
-              <div className="group grid transform gap-6 pl-5 transition-all duration-200 hover:scale-105">
+              <div className="group grid transform gap-6 transition-all duration-200 hover:scale-105">
                 <img
                   className="h-48 w-full rounded-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                   height="200"
-                  src="/academic_research.jpg"
+                  src="/coauthor_dashboard.png"
                   style={{
                     aspectRatio: "200/200",
                     objectFit: "cover",
@@ -314,15 +314,18 @@ export function LandingPage() {
                   width="200"
                 />
                 <h3 className="text-lg font-bold text-gray-800 transition-all duration-500 ease-in-out dark:text-gray-800">
-                  Academic Research Information Scraper
+                  Coauthor
                 </h3>
-                <p className="text-gray-800 transition-all duration-500 ease-in-out dark:text-gray-800">
-                  Built a Java program powered by Selenium that accept keywords
-                  and parameters through a polished GUI and scrapes hundreds of
-                  academic research databases for related papers and returns
-                  notable info, including abstract, number of citations, date of
-                  publication, links to further related sources, etc.
-                </p>
+                <div>
+                  <Badge variant="secondary">
+                    🏆 Won Best First Time Hack at SFHacks 2024
+                  </Badge>
+                  <p className="pt-5 text-gray-800 transition-all duration-500 ease-in-out dark:text-gray-800">
+                    Your next research workstation. 
+                    All of your research workflow and collaboration needs on one platform.
+                  </p>
+                </div>
+
                 <div className="flex gap-4">
                   <Credenza>
                     <CredenzaTrigger asChild>
@@ -337,37 +340,25 @@ export function LandingPage() {
                     </CredenzaTrigger>
                     <CredenzaContent>
                       <CredenzaHeader>
-                        <CredenzaTitle>
-                          Academic Research Information Scraper
-                        </CredenzaTitle>
-                        <CredenzaDescription>Programmer</CredenzaDescription>
+                        <CredenzaTitle>Coauthor</CredenzaTitle>
+                        <CredenzaDescription>
+                          All of your research needs, centralized
+                        </CredenzaDescription>
                       </CredenzaHeader>
                       <CredenzaBody className="space-y-4 pb-4 text-center text-sm sm:pb-0 sm:text-left">
-                        <span className="p-1"></span>
                         <p>
-                          • Implemented Selenium web-scraping to gather
-                          information from a variety of published research
-                          papers given keywords.
+                          Coauthor is a web plaform created to simplify the hassle and moving parts 
+                          of the academic research process. 
                         </p>
-                        <span className="p-2"></span>
                         <p>
-                          • Utilized JavaFX to create a GUI that supports
-                          actions such as sorting alphabetically and by
-                          citations/number of views, and deletion/insertion of
-                          database elements, and displays the abstract, key
-                          citations, and other core information.
-                        </p>
-                        <span className="p-2"></span>
-                        <p>
-                          • Used SQLite to store and organize scraped research
-                          information and allows user to manually insert and
-                          delete information.
+                          Through self-training AI and real-time document collaboration, Coauthor is 
+                          your one-stop-shop for all your research needs.
                         </p>
                         <div className="pb-5 pt-5">
                           <img
                             className="mb-10 mt-10 h-52 w-full rounded-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                             height="200"
-                            src="/academic_research.jpg"
+                            src="/coauthor_dashboard.png"
                             style={{
                               aspectRatio: "200/200",
                               objectFit: "cover",
@@ -376,17 +367,28 @@ export function LandingPage() {
                           />
                         </div>
                         <CredenzaTitle>Technologies</CredenzaTitle>
-                        <div className="flex-grid flex pb-14">
-                          <Badge variant="secondary">Selenium</Badge>
+                        <div className="flex-grid flex">
+                          <Badge variant="secondary">NextJS</Badge>
                           <span className="px-1"></span>
-                          <Badge variant="secondary">Java</Badge>
+                          <Badge variant="secondary">Typescript</Badge>
                           <span className="px-1"></span>
-                          <Badge variant="secondary">SQLite</Badge>
+                          <Badge variant="secondary">ConvexDB</Badge>
                           <span className="px-1"></span>
-                          <Badge variant="secondary">JavaFX</Badge>
+                          <Badge variant="secondary">FireworksAI</Badge>
+                          <span className="px-1"></span>
+                          <Badge variant="secondary">Google Gemini</Badge>
                         </div>
                       </CredenzaBody>
                       <CredenzaFooter>
+                        <Link
+                          href={
+                            "https://devpost.com/software/coauthor"
+                          }
+                          target="_blank"
+                          className={cn(buttonVariants({ variant: "outline" }))}
+                        >
+                          DevPost
+                        </Link>
                         <CredenzaClose asChild>
                           <Button variant="outline">Close</Button>
                         </CredenzaClose>
@@ -395,7 +397,14 @@ export function LandingPage() {
                   </Credenza>
                   <Link
                     className="text-sm font-semibold italic text-gray-800 underline-offset-4 transition-all duration-500 ease-in-out hover:underline dark:text-gray-800"
-                    href="https://github.com/hrishikesh-srihari/research-scraper"
+                    href="https://coauthor.vercel.app"
+                    target="_blank"
+                  >
+                    Visit Site
+                  </Link>
+                  <Link
+                    className="font-space-grotesk text-sm font-semibold italic text-gray-800 underline-offset-4 transition-all duration-500 ease-in-out hover:underline dark:text-gray-800"
+                    href="https://github.com/abhi-arya1/coauthor"
                     target="_blank"
                   >
                     Github
