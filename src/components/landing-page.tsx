@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Button, buttonVariants } from "./ui/button";
 import { Space_Grotesk } from "next/font/google";
 import Typewriter from "typewriter-effect";
@@ -9,6 +10,12 @@ import { ModeToggle } from "./ui/mode_toggle";
 import DescriptionIcon from "@mui/icons-material/Description";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+const AnimatedTitle = dynamic(() => import("@/components/ui/animation-title"), {
+  ssr: false,
+});
+const AnimatedText = dynamic(() => import("@/components/ui/animation-text"), {
+  ssr: false,
+});
 
 import {
   Credenza,
@@ -61,13 +68,22 @@ export function LandingPage() {
         <section className="w-full py-12 transition-all duration-500 ease-in-out md:py-24 lg:py-32">
           <div className="container flex items-center justify-between px-4 sm:flex-col md:px-6 lg:flex-row">
             <div className="flex flex-col justify-center space-y-4">
-              <h1 className="font-space-grotesk pl-10 text-3xl font-bold tracking-tighter transition-all duration-500 ease-in-out sm:text-5xl xl:text-6xl/none">
+              {/* <h1 className="font-space-grotesk pl-10 text-3xl font-bold tracking-tighter transition-all duration-500 ease-in-out sm:text-5xl xl:text-6xl/none">
                 Hi, I&apos;m Rishi Srihari
-              </h1>
-              <p className="font-space-grotesk max-w-[800px] pl-10 text-gray-500 transition-all duration-500 ease-in-out md:text-2xl dark:text-gray-400">
+              </h1> */}
+              <AnimatedTitle />
+              {/* <p className="font-space-grotesk max-w-[800px] pl-10 text-gray-500 transition-all duration-500 ease-in-out md:text-2xl dark:text-gray-400">
                 A CS student and front-end developer specializing in building
                 web applications.
-              </p>
+              </p> */}
+              <div className="text-wrap max-w-[500px] pl-5 text-gray-500 transition-all duration-500 ease-in-out md:text-2xl dark:text-gray-400">
+                {/* <AnimatedText
+                  text="A CS student and front-end developer specializing in building
+                web applications."
+                /> */}
+                A CS student and front-end developer specializing in building
+                web applications.
+              </div>
             </div>
             <img
               className="h-64 w-64 rounded-full transition-transform duration-500 ease-in-out group-hover:scale-105"
@@ -82,11 +98,11 @@ export function LandingPage() {
           </div>
         </section>
         <section
-          className="w-full skew-y-3 transform bg-violet-400 py-12 transition-all duration-500 ease-in-out md:py-24 lg:py-32 dark:bg-violet-400"
+          className="w-full skew-y-3 transform bg-violet-400 py-12 pl-8 transition-all duration-500 ease-in-out md:py-24 lg:py-32 dark:bg-violet-400"
           id="projects"
         >
-          <div className="container -skew-y-3 transform px-4 md:px-6">
-            <h2 className="pb-10 pl-10 text-3xl font-bold tracking-tighter text-gray-800 transition-all ease-in-out sm:text-5xl dark:text-gray-800 dark:duration-500">
+          <div className="container -skew-y-3 transform px-4 md:px-4">
+            <h2 className="pb-10 text-3xl font-bold tracking-tighter text-gray-800 transition-all ease-in-out sm:text-5xl dark:text-gray-800 dark:duration-500">
               Projects
             </h2>
             <div className="mx-auto mr-5 mt-8 grid items-start gap-10 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-7xl lg:grid-cols-3">
@@ -206,7 +222,7 @@ export function LandingPage() {
                 <img
                   className="h-48 w-full rounded-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                   height="200"
-                  src="/billiards.jpg.webp"
+                  src="/opennote.png"
                   style={{
                     aspectRatio: "200/200",
                     objectFit: "cover",
@@ -214,11 +230,13 @@ export function LandingPage() {
                   width="200"
                 />
                 <h3 className="text-lg font-bold text-gray-800 transition-all duration-500 ease-in-out dark:text-gray-800">
-                  Billiards Tracker
+                  Opennote
                 </h3>
+                <Badge variant="secondary" className="pl-4 py-1">
+                    🏆 Won Best Use of AI in Edu. and Best Improving Digital Experience at LAHacks 2024
+                  </Badge>
                 <p className="font-space-grotesk text-gray-800 transition-all duration-500 ease-in-out dark:text-gray-800">
-                  A program designed to map live billiard games for trajectory
-                  prediction and analysis.
+                  A platform for students and learners to visualize notes, lessons, and more. Supercharge your notes.
                 </p>
                 <div className="flex gap-4">
                   <Credenza>
@@ -234,31 +252,33 @@ export function LandingPage() {
                     </CredenzaTrigger>
                     <CredenzaContent>
                       <CredenzaHeader>
-                        <CredenzaTitle>Billiards Tracker</CredenzaTitle>
-                        <CredenzaDescription>Programmer</CredenzaDescription>
+                        <CredenzaTitle>Opennote</CredenzaTitle>
+                        <CredenzaDescription>Fullstack Developer</CredenzaDescription>
                       </CredenzaHeader>
                       <CredenzaBody className="space-y-4 pb-4 text-center text-sm sm:pb-0 sm:text-left">
                         <span className="p-1"></span>
+                        <Badge variant="secondary" className="pl-4 py-1">
+                          🏆 Won Best Use of AI in Edu. and Best Improving Digital Experience at LAHacks 2024
+                        </Badge>
                         <p>
-                          • Used OpenCV to remap live feeds of billiards games
-                          onto a 2D interface for analysis in real time.
+                          • Implemented a closed-feedback loop for automatic error catching and processing across a 
+                          multi-model Gemini and GPT-4 LLM data pipeline to guarantee polished final animation renders for users.
                         </p>
                         <span className="p-2"></span>
                         <p>
-                          • Employed physics concepts to predict ball trajectory
-                          and suggest optimal next moves and angles
+                          • Employed FFMPEG command-line subprocesses to automate seamless stitching of generated audio 
+                          narrations and video animations at runtime.
                         </p>
                         <span className="p-2"></span>
                         <p>
-                          • Developed an algorithm that takes into account
-                          angular velocity, drag, friction, and live table
-                          layout to predict game movements.
+                          • Created a polished platform for visual learning aid generation from notes and 
+                          written material within 36 hours.
                         </p>
                         <div className="pb-5 pt-5">
                           <img
                             className="mb-10 mt-10 h-52 w-full rounded-md object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                             height="200"
-                            src="/billiards.jpg.webp"
+                            src="/opennote.png"
                             style={{
                               aspectRatio: "200/200",
                               objectFit: "cover",
@@ -268,19 +288,19 @@ export function LandingPage() {
                         </div>
                         <CredenzaTitle>Technologies</CredenzaTitle>
                         <div className="flex-grid flex pb-14">
-                          <Badge variant="secondary">Python</Badge>
+                          <Badge variant="secondary">Typescript</Badge>
                           <span className="px-1"></span>
-                          <Badge variant="secondary">OpenCV</Badge>
+                          <Badge variant="secondary">Generative AI</Badge>
                           <span className="px-1"></span>
-                          <Badge variant="secondary">Advanced Physics</Badge>
+                          <Badge variant="secondary">Convex</Badge>
                           <span className="px-1"></span>
-                          <Badge variant="secondary">Pandas</Badge>
+                          <Badge variant="secondary">nGrok</Badge>
                         </div>
                       </CredenzaBody>
                       <CredenzaFooter>
                         <Link
                           href={
-                            "https://github.com/hrishikesh-srihari/billiardTracking"
+                            "https://github.com/abhi-arya1/opennote"
                           }
                           target="_blank"
                           className={cn(buttonVariants({ variant: "outline" }))}
@@ -295,7 +315,14 @@ export function LandingPage() {
                   </Credenza>
                   <Link
                     className="text-sm font-semibold italic text-gray-800 underline-offset-4 transition-all duration-500 ease-in-out hover:underline dark:text-gray-800"
-                    href="https://github.com/hrishikesh-srihari/billiardTracking"
+                    href="https://open-note.tech"
+                    target="_blank"
+                  >
+                    Visit Site
+                  </Link>
+                  <Link
+                    className="text-sm font-semibold italic text-gray-800 underline-offset-4 transition-all duration-500 ease-in-out hover:underline dark:text-gray-800"
+                    href="https://github.com/abhi-arya1/opennote"
                     target="_blank"
                   >
                     Github
@@ -321,8 +348,8 @@ export function LandingPage() {
                     🏆 Won Best First Time Hack at SFHacks 2024
                   </Badge>
                   <p className="pt-5 text-gray-800 transition-all duration-500 ease-in-out dark:text-gray-800">
-                    Your next research workstation. 
-                    All of your research workflow and collaboration needs on one platform.
+                    Your next research workstation. All of your research
+                    workflow and collaboration needs on one platform.
                   </p>
                 </div>
 
@@ -347,12 +374,14 @@ export function LandingPage() {
                       </CredenzaHeader>
                       <CredenzaBody className="space-y-4 pb-4 text-center text-sm sm:pb-0 sm:text-left">
                         <p>
-                          Coauthor is a web plaform created to simplify the hassle and moving parts 
-                          of the academic research process. 
+                          Coauthor is a web plaform created to simplify the
+                          hassle and moving parts of the academic research
+                          process.
                         </p>
                         <p>
-                          Through self-training AI and real-time document collaboration, Coauthor is 
-                          your one-stop-shop for all your research needs.
+                          Through self-training AI and real-time document
+                          collaboration, Coauthor is your one-stop-shop for all
+                          your research needs.
                         </p>
                         <div className="pb-5 pt-5">
                           <img
@@ -381,9 +410,7 @@ export function LandingPage() {
                       </CredenzaBody>
                       <CredenzaFooter>
                         <Link
-                          href={
-                            "https://devpost.com/software/coauthor"
-                          }
+                          href={"https://devpost.com/software/coauthor"}
                           target="_blank"
                           className={cn(buttonVariants({ variant: "outline" }))}
                         >
@@ -641,8 +668,9 @@ export function LandingPage() {
                   March 2024 - Present
                 </h5>
                 <p className="font-space-grotesk text-gray-500 transition-all duration-500 ease-in-out dark:text-gray-400">
-                Organize weekly office hours and help labs and collaborate closely with Teaching Assistants and Prof. Gassko to write and 
-                test problems for use during lecture instruction and exams.
+                  Organize weekly office hours and help labs and collaborate
+                  closely with Teaching Assistants and Prof. Gassko to write and
+                  test problems for use during lecture instruction and exams.
                 </p>
                 <div className="flex gap-4">
                   <Credenza>
@@ -657,7 +685,8 @@ export function LandingPage() {
                     <CredenzaContent>
                       <CredenzaHeader>
                         <CredenzaTitle>
-                          Learning Assistant at Donald Bren School of Information and Computer Sciences
+                          Learning Assistant at Donald Bren School of
+                          Information and Computer Sciences
                         </CredenzaTitle>
                         <CredenzaDescription>
                           Boolean Logic and Discrete Structures
@@ -666,13 +695,15 @@ export function LandingPage() {
                       <CredenzaBody className="space-y-4 pb-4 text-center text-sm sm:pb-0 sm:text-left">
                         <span className="p-1"></span>
                         <p>
-                          • Organize weekly office hours and help labs to help 200+ students through specific 
-                          problems and prepare for exams and lectures.
+                          • Organize weekly office hours and help labs to help
+                          200+ students through specific problems and prepare
+                          for exams and lectures.
                         </p>
                         <span className="p-2"></span>
                         <p>
-                          • Collaborate closely with Teaching Assistant and Prof. Gassko to write and test problems 
-                          for use during lecture instruction and exams
+                          • Collaborate closely with Teaching Assistant and
+                          Prof. Gassko to write and test problems for use during
+                          lecture instruction and exams
                         </p>
                         <div className="pb-5 pt-5">
                           <img
@@ -688,7 +719,9 @@ export function LandingPage() {
                         </div>
                         <CredenzaTitle>Skills</CredenzaTitle>
                         <div className="flex-grid flex pb-14">
-                          <Badge variant="secondary">Discrete Mathematics</Badge>
+                          <Badge variant="secondary">
+                            Discrete Mathematics
+                          </Badge>
                           <span className="px-1"></span>
                           <Badge variant="secondary">Teaching</Badge>
                           <span className="px-1"></span>
@@ -713,7 +746,7 @@ export function LandingPage() {
           className="w-full bg-violet-400 py-12 transition-all duration-500 ease-in-out md:py-24 lg:py-32 dark:bg-violet-400"
           id="about"
         >
-          <div className="">
+          <div className="h-full">
             <div className="pt-10">
               <h2 className="pl-10 text-3xl font-bold tracking-tighter text-gray-800 transition-all duration-500 ease-in-out sm:text-5xl dark:text-gray-800">
                 About Me
@@ -741,7 +774,7 @@ export function LandingPage() {
                 </Button>
               </div>
             </div>
-            <div className="ml-[900px] mt-[-300px] flex w-[600px]">
+            <div className="ml-auto mr-[70px] mt-[-300px] flex w-[600px]">
               <Carousel className="h-[500px]">
                 <CarouselContent className="h-[500px]">
                   <CarouselItem className="h-[500px]">
